@@ -4,6 +4,7 @@ version = "0.1.0"
 description = "Reusable environment for the KSE bioinformatics machine-learning practicals"
 requires-python = ">=3.11,<3.12"
 dependencies = [
+    "dcor>=0.7",
     "ipykernel>=6.29",
     "jupyterlab>=4.4",
     "matplotlib>=3.9",

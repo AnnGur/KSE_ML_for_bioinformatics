@@ -4,4 +4,22 @@ __pycache__/
 graphify-out/
 .ipynb_checkpoints/
 .DS_Store
-.venv/
+
+# Local MLflow tracking state and artifacts
+mlruns/
+mlartifacts/
+week6/mlflow.db
+week6/mlartifacts/
+
+# Week 7 local training outputs and model weights
+/practicals/week7/*.pt
+/practicals/week7/**/*.pt
+/practicals/week7/**/runs/
+/practicals/week7/**/*.cache
+/practicals/week7/cvat_model_assisted_yolo/
+/practicals/week7/cvat_model_assisted_yolo.zip
+
+# Keep only the deliberately selected public YOLO annotation example
+/practicals/week7/detection/colonies_annotation/obj_train_data/*
+!/practicals/week7/detection/colonies_annotation/obj_train_data/604.jpg
+!/practicals/week7/detection/colonies_annotation/obj_train_data/604.txt

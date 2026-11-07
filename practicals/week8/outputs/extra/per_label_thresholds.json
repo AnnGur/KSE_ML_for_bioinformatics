@@ -1,0 +1,86 @@
+{
+  "frozen": {
+    "per_label_thresholds": {
+      "Cytoplasm": 0.5,
+      "Nucleus": 0.45,
+      "Cell membrane": 0.75,
+      "Mitochondrion": 0.75,
+      "Endoplasmic reticulum": 0.7,
+      "Lysosome/Vacuole": 0.6,
+      "Golgi apparatus": 0.65,
+      "Peroxisome": 0.85
+    },
+    "val_macro_f1_per_label_thr": 0.5028806700206478,
+    "hpa_macro_f1_per_label_thr": 0.32148767369874687,
+    "hpa_micro_f1_per_label_thr": 0.529512893982808,
+    "hpa_exact_per_label_thr": 0.20850320326150262,
+    "val_macro_f1_global_0.65": 0.4542000142488502,
+    "hpa_macro_f1_global_0.65": 0.29232584834738956,
+    "hpa_per_label_f1": {
+      "Cytoplasm": 0.5382857142857143,
+      "Nucleus": 0.7049808429118773,
+      "Cell membrane": 0.3833718244803695,
+      "Mitochondrion": 0.429042904290429,
+      "Endoplasmic reticulum": 0.19081272084805653,
+      "Lysosome/Vacuole": 0.016129032258064516,
+      "Golgi apparatus": 0.30927835051546393,
+      "Peroxisome": 0.0
+    }
+  },
+  "partial": {
+    "per_label_thresholds": {
+      "Cytoplasm": 0.5,
+      "Nucleus": 0.5,
+      "Cell membrane": 0.7,
+      "Mitochondrion": 0.85,
+      "Endoplasmic reticulum": 0.75,
+      "Lysosome/Vacuole": 0.65,
+      "Golgi apparatus": 0.8,
+      "Peroxisome": 0.9
+    },
+    "val_macro_f1_per_label_thr": 0.5446588188738715,
+    "hpa_macro_f1_per_label_thr": 0.3348933116954033,
+    "hpa_micro_f1_per_label_thr": 0.5478943022295624,
+    "hpa_exact_per_label_thr": 0.26965637740244613,
+    "val_macro_f1_global_0.65": 0.5050067277691694,
+    "hpa_macro_f1_global_0.65": 0.3147802346005012,
+    "hpa_per_label_f1": {
+      "Cytoplasm": 0.5556246115599751,
+      "Nucleus": 0.6924333151878062,
+      "Cell membrane": 0.406570841889117,
+      "Mitochondrion": 0.5223529411764706,
+      "Endoplasmic reticulum": 0.20652173913043478,
+      "Lysosome/Vacuole": 0.02666666666666667,
+      "Golgi apparatus": 0.1889763779527559,
+      "Peroxisome": 0.08
+    }
+  },
+  "full": {
+    "per_label_thresholds": {
+      "Cytoplasm": 0.35,
+      "Nucleus": 0.35,
+      "Cell membrane": 0.75,
+      "Mitochondrion": 0.9,
+      "Endoplasmic reticulum": 0.8,
+      "Lysosome/Vacuole": 0.85,
+      "Golgi apparatus": 0.9,
+      "Peroxisome": 0.9
+    },
+    "val_macro_f1_per_label_thr": 0.5578474640511124,
+    "hpa_macro_f1_per_label_thr": 0.33891702056896517,
+    "hpa_micro_f1_per_label_thr": 0.5738990548964408,
+    "hpa_exact_per_label_thr": 0.25917297612114154,
+    "val_macro_f1_global_0.65": 0.5259812290341557,
+    "hpa_macro_f1_global_0.65": 0.3290369161220362,
+    "hpa_per_label_f1": {
+      "Cytoplasm": 0.552414605418139,
+      "Nucleus": 0.7271815446339017,
+      "Cell membrane": 0.35348837209302325,
+      "Mitochondrion": 0.5839080459770115,
+      "Endoplasmic reticulum": 0.22485207100591717,
+      "Lysosome/Vacuole": 0.0,
+      "Golgi apparatus": 0.1694915254237288,
+      "Peroxisome": 0.1
+    }
+  }
+}

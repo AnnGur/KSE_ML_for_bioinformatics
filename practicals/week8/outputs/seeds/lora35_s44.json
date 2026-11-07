@@ -1,0 +1,23 @@
+{
+  "tag": "lora35_s44",
+  "seed": 44,
+  "model": "facebook/esm2_t12_35M_UR50D",
+  "select": "f1",
+  "patience": 0,
+  "best_epoch": 5,
+  "epochs_run": 5,
+  "trainable_parameters": 280328,
+  "total_parameters": 33780729,
+  "peak_memory_allocated_gb": 1.075103232,
+  "mean_seconds_per_epoch": 349.9435077906586,
+  "val": {
+    "macro_f1": 0.5004843426985957,
+    "micro_f1": 0.6190380627466721,
+    "exact_match": 0.35367662640389913
+  },
+  "hpa": {
+    "macro_f1": 0.31269912705497377,
+    "micro_f1": 0.5107546481954065,
+    "exact_match": 0.23995340710541643
+  }
+}

@@ -1,0 +1,26 @@
+perlabel frozen {'per_label_thresholds': {'Cytoplasm': 0.5, 'Nucleus': 0.45, 'Cell membrane': 0.75, 'Mitochondrion': 0.75, 'Endoplasmic reticulum': 0.7, 'Lysosome/Vacuole': 0.6, 'Golgi apparatus': 0.65, 'Peroxisome': 0.85}, 'val_macro_f1_per_label_thr': 0.5028806700206478, 'hpa_macro_f1_per_label_thr': 0.32148767369874687, 'hpa_micro_f1_per_label_thr': 0.529512893982808, 'hpa_exact_per_label_thr': 0.20850320326150262, 'val_macro_f1_global_0.65': 0.4542000142488502, 'hpa_macro_f1_global_0.65': 0.29232584834738956}
+perlabel partial {'per_label_thresholds': {'Cytoplasm': 0.5, 'Nucleus': 0.5, 'Cell membrane': 0.7, 'Mitochondrion': 0.85, 'Endoplasmic reticulum': 0.75, 'Lysosome/Vacuole': 0.65, 'Golgi apparatus': 0.8, 'Peroxisome': 0.9}, 'val_macro_f1_per_label_thr': 0.5446588188738715, 'hpa_macro_f1_per_label_thr': 0.3348933116954033, 'hpa_micro_f1_per_label_thr': 0.5478943022295624, 'hpa_exact_per_label_thr': 0.26965637740244613, 'val_macro_f1_global_0.65': 0.5050067277691694, 'hpa_macro_f1_global_0.65': 0.3147802346005012}
+perlabel full {'per_label_thresholds': {'Cytoplasm': 0.35, 'Nucleus': 0.35, 'Cell membrane': 0.75, 'Mitochondrion': 0.9, 'Endoplasmic reticulum': 0.8, 'Lysosome/Vacuole': 0.85, 'Golgi apparatus': 0.9, 'Peroxisome': 0.9}, 'val_macro_f1_per_label_thr': 0.5578474640511124, 'hpa_macro_f1_per_label_thr': 0.33891702056896517, 'hpa_micro_f1_per_label_thr': 0.5738990548964408, 'hpa_exact_per_label_thr': 0.25917297612114154, 'val_macro_f1_global_0.65': 0.5259812290341557, 'hpa_macro_f1_global_0.65': 0.3290369161220362}
+Loading weights:   0%|          | 0/198 [00:00<?, ?it/s]Loading weights:  32%|███▏      | 63/198 [00:00<00:00, 629.88it/s]Loading weights: 100%|██████████| 198/198 [00:00<00:00, 1906.93it/s]
+[transformers] [1mEsmModel LOAD REPORT[0m from: facebook/esm2_t12_35M_UR50D
+Key                       | Status     | 
+--------------------------+------------+-
+lm_head.dense.weight      | UNEXPECTED | 
+lm_head.layer_norm.weight | UNEXPECTED | 
+lm_head.dense.bias        | UNEXPECTED | 
+lm_head.bias              | UNEXPECTED | 
+lm_head.layer_norm.bias   | UNEXPECTED | 
+pooler.dense.bias         | MISSING    | 
+pooler.dense.weight       | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+LoRA trainable parameters: 280,328 / 33,780,729 (0.83%)
+{'epoch': 1, 'seconds': 170.0780962202698, 'train_macro_f1': 0.44400369110319515, 'train_micro_f1': 0.530368275596118, 'train_exact_match': 0.1803328597523848, 'train_loss': 0.8092258783287564, 'val_macro_f1': 0.4585834175000933, 'val_micro_f1': 0.5316944107595635, 'val_exact_match': 0.24094087730451366, 'val_loss': 0.6747969077455211}
+{'epoch': 2, 'seconds': 168.9012342900969, 'train_macro_f1': 0.4929386808363216, 'train_micro_f1': 0.5833046115668298, 'train_exact_match': 0.25081185305459713, 'train_loss': 0.6891342030124754, 'val_macro_f1': 0.4807288244540989, 'val_micro_f1': 0.586163218529465, 'val_exact_match': 0.25111252383979654, 'val_loss': 0.6489228865597101}
+{'epoch': 3, 'seconds': 175.15551300300285, 'train_macro_f1': 0.5217619528628943, 'train_micro_f1': 0.6144500452371721, 'train_exact_match': 0.28622894256139636, 'train_loss': 0.618978433540839, 'val_macro_f1': 0.48317476320592034, 'val_micro_f1': 0.5893907168772676, 'val_exact_match': 0.2767535494808222, 'val_loss': 0.650224631498693}
+{'epoch': 4, 'seconds': 176.9154734746553, 'train_macro_f1': 0.5488237457316871, 'train_micro_f1': 0.6373202904994812, 'train_exact_match': 0.3239801096001624, 'train_loss': 0.5568603549068686, 'val_macro_f1': 0.4968073627353205, 'val_micro_f1': 0.616911624355793, 'val_exact_match': 0.3038779402415766, 'val_loss': 0.6901886922483551}
+{'epoch': 5, 'seconds': 160.211391328834, 'train_macro_f1': 0.5744326280922188, 'train_micro_f1': 0.6591415281586642, 'train_exact_match': 0.34417495433326567, 'train_loss': 0.5087939612552302, 'val_macro_f1': 0.494899651745366, 'val_micro_f1': 0.6157770800627943, 'val_exact_match': 0.33248569612205975, 'val_loss': 0.8071129053805839}
+LORA_RESULT {'trainable_parameters': 280328, 'total_parameters': 33780729, 'peak_memory_allocated_gb': 1.076365312, 'mean_seconds_per_epoch': 170.25234166337177, 'best_val_macro_f1': 0.4968073627353205, 'best_epoch': 4, 'hpa': {'macro_f1': 0.32517502670379506, 'micro_f1': 0.5128474042999476, 'exact_match': 0.2079207920792079, 'loss': 0.9311930311319783}, 'lora': {'r': 8, 'alpha': 16, 'dropout': 0.05, 'targets': ['query', 'key', 'value'], 'lr_lora': 0.0002, 'lr_head': 0.001}, 'batch_size': 4, 'max_length': 400, 'epochs': 5, 'seed': 42}
+ALL_LORA_DONE

@@ -1,0 +1,22 @@
+Loading weights:   0%|          | 0/198 [00:00<?, ?it/s]Loading weights: 100%|██████████| 198/198 [00:00<00:00, 6265.73it/s]
+[transformers] [1mEsmModel LOAD REPORT[0m from: facebook/esm2_t12_35M_UR50D
+Key                       | Status     | 
+--------------------------+------------+-
+lm_head.dense.bias        | UNEXPECTED | 
+lm_head.bias              | UNEXPECTED | 
+lm_head.layer_norm.bias   | UNEXPECTED | 
+lm_head.layer_norm.weight | UNEXPECTED | 
+lm_head.dense.weight      | UNEXPECTED | 
+pooler.dense.weight       | MISSING    | 
+pooler.dense.bias         | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+Trainable parameters: 5,545,928 / 33,504,249 (16.55%)
+{'epoch': 1, 'seconds': 99.2369445739314, 'train_macro_f1': 0.3978841897107301, 'train_micro_f1': 0.4769444612316432, 'train_exact_match': 0.09219606251268521, 'train_loss': 0.9102709032118816, 'val_macro_f1': 0.4356249903999604, 'val_micro_f1': 0.5284096811052249, 'val_exact_match': 0.10510701419792329, 'val_loss': 0.7338607483658909}
+{'epoch': 2, 'seconds': 99.34124628687277, 'train_macro_f1': 0.46161367185633617, 'train_micro_f1': 0.5501781281751187, 'train_exact_match': 0.1853562005277045, 'train_loss': 0.7539829225594116, 'val_macro_f1': 0.46813854284004686, 'val_micro_f1': 0.5785676579271511, 'val_exact_match': 0.24115278660733205, 'val_loss': 0.688338712650377}
+{'epoch': 3, 'seconds': 99.76633337698877, 'train_macro_f1': 0.4872467340108174, 'train_micro_f1': 0.5777378668517082, 'train_exact_match': 0.23153034300791556, 'train_loss': 0.6962015125556483, 'val_macro_f1': 0.46362536814957933, 'val_micro_f1': 0.5653499003633806, 'val_exact_match': 0.2294977749523204, 'val_loss': 0.6694255115609978}
+{'epoch': 4, 'seconds': 127.37159770890139, 'train_macro_f1': 0.5073434167358302, 'train_micro_f1': 0.5965698284914246, 'train_exact_match': 0.25705297341181244, 'train_loss': 0.6506497914877726, 'val_macro_f1': 0.4774738960444361, 'val_micro_f1': 0.5897047232159098, 'val_exact_match': 0.2733630006357279, 'val_loss': 0.7061907407887079}
+{'epoch': 5, 'seconds': 147.19996501598507, 'train_macro_f1': 0.5268239373044133, 'train_micro_f1': 0.6150912557886135, 'train_exact_match': 0.2851633854272377, 'train_loss': 0.6110759035678308, 'val_macro_f1': 0.4767944669827268, 'val_micro_f1': 0.5753139356814702, 'val_exact_match': 0.27823691460055094, 'val_loss': 0.7295798752792408}
+{'external_hpa_test': {'macro_f1': 0.32724840384359216, 'micro_f1': 0.4898165292038377, 'exact_match': 0.19394292370413513, 'loss': 0.7851007245589496}}

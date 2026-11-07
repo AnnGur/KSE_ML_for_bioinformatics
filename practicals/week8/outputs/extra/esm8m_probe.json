@@ -1,0 +1,37 @@
+{
+  "fit_seconds": 2.323838949203491,
+  "val": {
+    "macro_f1": 0.4377292961749735,
+    "micro_f1": 0.5502068221329657,
+    "exact_match": 0.22250476795931343,
+    "per_label_f1": {
+      "Cytoplasm": 0.6699905033238367,
+      "Nucleus": 0.7481980934666357,
+      "Cell membrane": 0.5976878612716763,
+      "Mitochondrion": 0.5626631853785901,
+      "Endoplasmic reticulum": 0.4361628709454796,
+      "Lysosome/Vacuole": 0.204,
+      "Golgi apparatus": 0.17804154302670624,
+      "Peroxisome": 0.10509031198686371
+    },
+    "pred_positive_rate": 0.28438228438228436,
+    "true_positive_rate": 0.15747510065691883
+  },
+  "hpa": {
+    "macro_f1": 0.28820991519532135,
+    "micro_f1": 0.45609478980684953,
+    "exact_match": 0.14502038439138032,
+    "per_label_f1": {
+      "Cytoplasm": 0.5073108709472346,
+      "Nucleus": 0.694240837696335,
+      "Cell membrane": 0.39421338155515373,
+      "Mitochondrion": 0.33648790746582546,
+      "Endoplasmic reticulum": 0.15633423180592992,
+      "Lysosome/Vacuole": 0.018018018018018018,
+      "Golgi apparatus": 0.19907407407407407,
+      "Peroxisome": 0.0
+    },
+    "pred_positive_rate": 0.2949184624344787,
+    "true_positive_rate": 0.15361094933022715
+  }
+}

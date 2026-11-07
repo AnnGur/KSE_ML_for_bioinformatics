@@ -1,0 +1,17 @@
+== mean ± std over seeds 42/43/44 (n=3, sample std)
+35M full {'val_macro_f1': '0.507 ± 0.002 [np.float64(0.505), np.float64(0.506), np.float64(0.509)]', 'hpa_macro_f1': '0.339 ± 0.005 [0.335, 0.339, 0.344]', 'hpa_micro_f1': '0.527 ± 0.014 [0.512, 0.535, 0.535]', 'hpa_exact': '0.248 ± 0.012 [0.235, 0.252, 0.259]'}
+35M LoRA {'val_macro_f1': '0.500 ± 0.003 [0.497, 0.502, 0.5]', 'hpa_macro_f1': '0.322 ± 0.008 [0.325, 0.328, 0.313]', 'hpa_micro_f1': '0.520 ± 0.014 [0.513, 0.536, 0.511]', 'hpa_exact': '0.231 ± 0.020 [0.208, 0.244, 0.24]'}
+150M LoRA {'val_macro_f1': '0.534 ± 0.010 [0.545, 0.533, 0.524]', 'hpa_macro_f1': '0.360 ± 0.004 [0.364, 0.358, 0.359]', 'hpa_micro_f1': '0.541 ± 0.018 [0.553, 0.551, 0.521]', 'hpa_exact': '0.251 ± 0.029 [0.272, 0.264, 0.218]'}
+
+== early stopping on validation loss (seed 42)
+lora35_es epochs run 4 best epoch(loss) 2 val {'macro_f1': 0.481, 'micro_f1': 0.586, 'exact_match': 0.251} HPA {'macro_f1': 0.329, 'micro_f1': 0.481, 'exact_match': 0.176} s/epoch 310 peak 1.08 GB
+lora150_es epochs run 4 best epoch(loss) 2 val {'macro_f1': 0.509, 'micro_f1': 0.622, 'exact_match': 0.327} HPA {'macro_f1': 0.356, 'micro_f1': 0.534, 'exact_match': 0.246} s/epoch 481 peak 3.53 GB
+frozen150 memory {'frozen150_peak_allocated_gb': 2.700086784, 'batch_size': 8}
+
+== bootstrap 95% CI of HPA macro-F1 (threshold 0.5, 2000 resamples over proteins), seed-42 checkpoints
+Traceback (most recent call last):
+  File "<stdin>", line 27, in <module>
+  File "/Users/anna_gurina/Desktop/KSE_ML_for_bioinformatics/.venv/lib/python3.11/site-packages/numpy/lib/_npyio_impl.py", line 454, in load
+    fid = stack.enter_context(open(os.fspath(file), "rb"))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'outputs/extra/logits_frozen.npz'

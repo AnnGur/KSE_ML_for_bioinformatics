@@ -1,0 +1,23 @@
+{
+  "tag": "lora150_s43",
+  "seed": 43,
+  "model": "facebook/esm2_t30_150M_UR50D",
+  "select": "f1",
+  "patience": 0,
+  "best_epoch": 5,
+  "epochs_run": 5,
+  "trainable_parameters": 926728,
+  "total_parameters": 149065569,
+  "peak_memory_allocated_gb": 3.526449152,
+  "mean_seconds_per_epoch": 868.0654046198354,
+  "val": {
+    "macro_f1": 0.5331912046520126,
+    "micro_f1": 0.6559742260820843,
+    "exact_match": 0.3899131171858445
+  },
+  "hpa": {
+    "macro_f1": 0.3577128592317117,
+    "micro_f1": 0.550864065562088,
+    "exact_match": 0.2644146767617938
+  }
+}

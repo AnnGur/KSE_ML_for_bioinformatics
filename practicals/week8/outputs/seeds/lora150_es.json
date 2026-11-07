@@ -1,0 +1,23 @@
+{
+  "tag": "lora150_es",
+  "seed": 42,
+  "model": "facebook/esm2_t30_150M_UR50D",
+  "select": "loss",
+  "patience": 2,
+  "best_epoch": 2,
+  "epochs_run": 4,
+  "trainable_parameters": 926728,
+  "total_parameters": 149065569,
+  "peak_memory_allocated_gb": 3.525564416,
+  "mean_seconds_per_epoch": 480.97232649254147,
+  "val": {
+    "macro_f1": 0.5094237299412584,
+    "micro_f1": 0.6218241869918699,
+    "exact_match": 0.3267641449459631
+  },
+  "hpa": {
+    "macro_f1": 0.35552807442393486,
+    "micro_f1": 0.5339130434782609,
+    "exact_match": 0.24635993011065813
+  }
+}

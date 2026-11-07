@@ -1,0 +1,9 @@
+label,tn,fp,fn,tp
+Cytoplasm,820,335,277,285
+Nucleus,697,127,426,467
+Cell membrane,1316,114,181,106
+Mitochondrion,1179,342,52,144
+Endoplasmic reticulum,1511,129,56,21
+Lysosome/Vacuole,1569,146,0,2
+Golgi apparatus,1522,109,60,26
+Peroxisome,1639,71,2,5

@@ -1,0 +1,20 @@
+{
+  "frozen": {
+    "selected_threshold_on_val": 0.65,
+    "hpa_macro_f1_selected": 0.29232584834738956,
+    "hpa_micro_f1_selected": 0.4252549359947928,
+    "hpa_exact_selected": 0.24286546301688994
+  },
+  "partial": {
+    "selected_threshold_on_val": 0.65,
+    "hpa_macro_f1_selected": 0.3147802346005012,
+    "hpa_micro_f1_selected": 0.465300727032386,
+    "hpa_exact_selected": 0.29819452533488644
+  },
+  "full": {
+    "selected_threshold_on_val": 0.65,
+    "hpa_macro_f1_selected": 0.3290369161220362,
+    "hpa_micro_f1_selected": 0.4913644214162349,
+    "hpa_exact_selected": 0.302853814793244
+  }
+}

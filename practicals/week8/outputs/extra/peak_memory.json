@@ -1,0 +1,20 @@
+{
+  "frozen": {
+    "batch_size": 8,
+    "peak_allocated_gb": 0.279058432,
+    "peak_reserved_gb": 0.341835776,
+    "sec_per_step": 0.018853879477828742
+  },
+  "partial": {
+    "batch_size": 4,
+    "peak_allocated_gb": 0.543624192,
+    "peak_reserved_gb": 0.633339904,
+    "sec_per_step": 0.013997315000742673
+  },
+  "full": {
+    "batch_size": 4,
+    "peak_allocated_gb": 1.7083392,
+    "peak_reserved_gb": 1.954545664,
+    "sec_per_step": 0.032437953036278486
+  }
+}

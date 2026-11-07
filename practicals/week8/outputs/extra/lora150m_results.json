@@ -1,0 +1,30 @@
+{
+  "trainable_parameters": 926728,
+  "total_parameters": 149065569,
+  "peak_memory_allocated_gb": 3.524511232,
+  "mean_seconds_per_epoch": 471.7521318949759,
+  "best_val_macro_f1": 0.5447283687313746,
+  "best_epoch": 5,
+  "hpa": {
+    "macro_f1": 0.3644159974105181,
+    "micro_f1": 0.5525046382189239,
+    "exact_match": 0.2719860221316249,
+    "loss": 0.9792120491626933
+  },
+  "lora": {
+    "r": 8,
+    "alpha": 16,
+    "dropout": 0.05,
+    "targets": [
+      "query",
+      "key",
+      "value"
+    ],
+    "lr_lora": 0.0002,
+    "lr_head": 0.001
+  },
+  "batch_size": 4,
+  "max_length": 400,
+  "epochs": 5,
+  "seed": 42
+}

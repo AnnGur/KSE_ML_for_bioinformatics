@@ -1,0 +1,23 @@
+Loading weights:   0%|          | 0/486 [00:00<?, ?it/s]Loading weights: 100%|██████████| 486/486 [00:00<00:00, 6725.28it/s]
+[transformers] [1mEsmModel LOAD REPORT[0m from: facebook/esm2_t30_150M_UR50D
+Key                       | Status     | 
+--------------------------+------------+-
+lm_head.layer_norm.weight | UNEXPECTED | 
+lm_head.dense.bias        | UNEXPECTED | 
+lm_head.layer_norm.bias   | UNEXPECTED | 
+lm_head.bias              | UNEXPECTED | 
+lm_head.dense.weight      | UNEXPECTED | 
+pooler.dense.weight       | MISSING    | 
+pooler.dense.bias         | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+LoRA trainable parameters: 926,728 / 149,065,569 (0.62%)
+{'epoch': 1, 'seconds': 472.3119912240654, 'train_macro_f1': 0.46189597871017285, 'train_micro_f1': 0.5498563698309841, 'train_exact_match': 0.21610513497057032, 'train_loss': 0.7713313811215373, 'val_macro_f1': 0.4935059944329465, 'val_micro_f1': 0.6051314142678348, 'val_exact_match': 0.289044289044289, 'val_loss': 0.6363774244500864}
+{'epoch': 2, 'seconds': 471.128809757065, 'train_macro_f1': 0.52113300560843, 'train_micro_f1': 0.6148690615475726, 'train_exact_match': 0.29734118124619446, 'train_loss': 0.6225757846090454, 'val_macro_f1': 0.5116449711441144, 'val_micro_f1': 0.6220447486847943, 'val_exact_match': 0.3271879635515999, 'val_loss': 0.6034759433908871}
+{'epoch': 3, 'seconds': 471.66902704909444, 'train_macro_f1': 0.5691548076553389, 'train_micro_f1': 0.6570063015616914, 'train_exact_match': 0.3568094174954333, 'train_loss': 0.5236210578438995, 'val_macro_f1': 0.5300022291771069, 'val_micro_f1': 0.6597317273473857, 'val_exact_match': 0.37613901250264886, 'val_loss': 0.7381845892208263}
+{'epoch': 4, 'seconds': 471.67854893393815, 'train_macro_f1': 0.6210023509600859, 'train_micro_f1': 0.6961936836754147, 'train_exact_match': 0.40344022731885526, 'train_loss': 0.44169178789529534, 'val_macro_f1': 0.4942644309355314, 'val_micro_f1': 0.6215986949429038, 'val_exact_match': 0.3356643356643357, 'val_loss': 0.718888668810369}
+{'epoch': 5, 'seconds': 471.97228251071647, 'train_macro_f1': 0.6574203856571301, 'train_micro_f1': 0.7241125349830608, 'train_exact_match': 0.4422062106758677, 'train_loss': 0.38193692942778446, 'val_macro_f1': 0.5447283687313746, 'val_micro_f1': 0.6563498260807837, 'val_exact_match': 0.4053824962915872, 'val_loss': 0.9511599229195975}
+LORA_RESULT {'trainable_parameters': 926728, 'total_parameters': 149065569, 'peak_memory_allocated_gb': 3.524511232, 'mean_seconds_per_epoch': 471.7521318949759, 'best_val_macro_f1': 0.5447283687313746, 'best_epoch': 5, 'hpa': {'macro_f1': 0.3644159974105181, 'micro_f1': 0.5525046382189239, 'exact_match': 0.2719860221316249, 'loss': 0.9792120491626933}, 'lora': {'r': 8, 'alpha': 16, 'dropout': 0.05, 'targets': ['query', 'key', 'value'], 'lr_lora': 0.0002, 'lr_head': 0.001}, 'batch_size': 4, 'max_length': 400, 'epochs': 5, 'seed': 42}
+ALL_LORA150_DONE

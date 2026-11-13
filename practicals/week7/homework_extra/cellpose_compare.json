@@ -1,0 +1,83 @@
+[
+ {
+  "image": "D2_gTRIZMA1-2_003.tif",
+  "setting": "default",
+  "n_objects": 201,
+  "median_area": 1925.0,
+  "mean_area": 2308.9402985074626,
+  "p10_area": 902.0,
+  "coverage": 0.3540779113769531
+ },
+ {
+  "image": "D2_gTRIZMA1-2_003.tif",
+  "setting": "sensitive",
+  "n_objects": 149,
+  "median_area": 2127.0,
+  "mean_area": 2483.6644295302012,
+  "p10_area": 1149.8,
+  "coverage": 0.28233795166015624
+ },
+ {
+  "image": "D2_gTRIZMA1-2_003.tif",
+  "setting": "conservative",
+  "n_objects": 217,
+  "median_area": 1739.0,
+  "mean_area": 2084.26267281106,
+  "p10_area": 753.6,
+  "coverage": 0.3450660705566406
+ },
+ {
+  "image": "20251028_Test-PEL_Saos2_J7_E2.tif",
+  "setting": "default",
+  "n_objects": 277,
+  "median_area": 416.0,
+  "mean_area": 435.1913357400722,
+  "p10_area": 227.2,
+  "coverage": 0.0919708251953125
+ },
+ {
+  "image": "20251028_Test-PEL_Saos2_J7_E2.tif",
+  "setting": "sensitive",
+  "n_objects": 168,
+  "median_area": 521.0,
+  "mean_area": 551.7619047619048,
+  "p10_area": 339.4,
+  "coverage": 0.070721435546875
+ },
+ {
+  "image": "20251028_Test-PEL_Saos2_J7_E2.tif",
+  "setting": "conservative",
+  "n_objects": 259,
+  "median_area": 373.0,
+  "mean_area": 388.0656370656371,
+  "p10_area": 196.8,
+  "coverage": 0.07668228149414062
+ },
+ {
+  "image": "M1 SMOOTH CD86 10X 2-Orthogonal Projection-04_c1-3.tif",
+  "setting": "default",
+  "n_objects": 417,
+  "median_area": 934.0,
+  "mean_area": 1263.3357314148682,
+  "p10_area": 474.6,
+  "coverage": 0.502406120300293
+ },
+ {
+  "image": "M1 SMOOTH CD86 10X 2-Orthogonal Projection-04_c1-3.tif",
+  "setting": "sensitive",
+  "n_objects": 270,
+  "median_area": 1249.0,
+  "mean_area": 1614.3222222222223,
+  "p10_area": 595.8,
+  "coverage": 0.41567516326904297
+ },
+ {
+  "image": "M1 SMOOTH CD86 10X 2-Orthogonal Projection-04_c1-3.tif",
+  "setting": "conservative",
+  "n_objects": 435,
+  "median_area": 840.0,
+  "mean_area": 1159.7954022988506,
+  "p10_area": 435.20000000000005,
+  "coverage": 0.4811391830444336
+ }
+]

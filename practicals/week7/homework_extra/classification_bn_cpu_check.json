@@ -1,0 +1,164 @@
+{
+ "config": {
+  "epochs": 6,
+  "batch_size": 32,
+  "lr": 0.001,
+  "image_size": 128,
+  "seeds": [
+   221027
+  ],
+  "split_seed": 221026,
+  "device": "cpu",
+  "torch": "2.15.0"
+ },
+ "image_properties": {
+  "n_images": 17092,
+  "original_sizes": {
+   "360x363": 16639,
+   "366x369": 250,
+   "360x360": 198,
+   "360x361": 2,
+   "362x360": 1,
+   "359x360": 1,
+   "361x360": 1
+  },
+  "original_modes": {
+   "RGB": 17092
+  },
+  "resized_shape": [
+   3,
+   128,
+   128
+  ],
+  "dtype_after_ToTensor": "float32 in [0, 1]",
+  "pixel_min": 0.027450980618596077,
+  "pixel_max": 1.0,
+  "channel_mean": [
+   0.8739,
+   0.7486,
+   0.7216
+  ],
+  "channel_std": [
+   0.1569,
+   0.1828,
+   0.0789
+  ],
+  "class_counts_total": {
+   "basophil": 1218,
+   "eosinophil": 3117,
+   "erythroblast": 1551,
+   "ig": 2895,
+   "lymphocyte": 1214,
+   "monocyte": 1420,
+   "neutrophil": 3329,
+   "platelet": 2348
+  },
+  "class_counts_train": {
+   "basophil": 974,
+   "eosinophil": 2494,
+   "erythroblast": 1241,
+   "ig": 2316,
+   "lymphocyte": 971,
+   "monocyte": 1136,
+   "neutrophil": 2663,
+   "platelet": 1878
+  },
+  "class_counts_val": {
+   "basophil": 122,
+   "eosinophil": 311,
+   "erythroblast": 155,
+   "ig": 289,
+   "lymphocyte": 122,
+   "monocyte": 142,
+   "neutrophil": 333,
+   "platelet": 235
+  },
+  "class_counts_test": {
+   "basophil": 122,
+   "eosinophil": 312,
+   "erythroblast": 155,
+   "ig": 290,
+   "lymphocyte": 121,
+   "monocyte": 142,
+   "neutrophil": 333,
+   "platelet": 235
+  }
+ },
+ "classes": [
+  "basophil",
+  "eosinophil",
+  "erythroblast",
+  "ig",
+  "lymphocyte",
+  "monocyte",
+  "neutrophil",
+  "platelet"
+ ],
+ "runs": [
+  {
+   "condition": "batch normalization",
+   "seed": 221027,
+   "n_parameters": 267336,
+   "history": [
+    {
+     "epoch": 1,
+     "train_loss": 1.0644365315080553,
+     "train_acc": 0.7669128940247203,
+     "val_loss": 0.6028026002690833,
+     "val_acc": 0.8431831480397893,
+     "val_macro_f1": 0.787757608499658
+    },
+    {
+     "epoch": 2,
+     "train_loss": 0.26561774176459,
+     "train_acc": 0.9113581511007094,
+     "val_loss": 0.5892518446974199,
+     "val_acc": 0.8303101228788765,
+     "val_macro_f1": 0.8038585884529587
+    },
+    {
+     "epoch": 3,
+     "train_loss": 0.18760560793535272,
+     "train_acc": 0.9373948657939004,
+     "val_loss": 1.6681826587585484,
+     "val_acc": 0.7302516091281451,
+     "val_macro_f1": 0.6149094243740792
+    },
+    {
+     "epoch": 4,
+     "train_loss": 0.1278998377065211,
+     "train_acc": 0.957946317560155,
+     "val_loss": 1.7155249044865875,
+     "val_acc": 0.7524868344060854,
+     "val_macro_f1": 0.6403650319970846
+    },
+    {
+     "epoch": 5,
+     "train_loss": 0.10415723033623733,
+     "train_acc": 0.962773348935859,
+     "val_loss": 4.265351038219079,
+     "val_acc": 0.49561146869514333,
+     "val_macro_f1": 0.3883778756923285
+    },
+    {
+     "epoch": 6,
+     "train_loss": 0.09465442149185589,
+     "train_acc": 0.9680392013457179,
+     "val_loss": 0.4058072763691875,
+     "val_acc": 0.9016968987712113,
+     "val_macro_f1": 0.8965973179632406
+    }
+   ],
+   "final_val": {
+    "loss": 0.4058072763691875,
+    "accuracy": 0.9016968987712113,
+    "macro_f1": 0.8965973179632406
+   },
+   "final_test": {
+    "loss": 0.4192326015896267,
+    "accuracy": 0.8964912280701754,
+    "macro_f1": 0.894323378314785
+   }
+  }
+ ]
+}

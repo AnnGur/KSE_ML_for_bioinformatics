@@ -35,6 +35,8 @@ dependencies = [
     "cellpose>=4.2.1.1",
     "tifffile>=2026.3.3",
     "napari[all]>=0.9.2",
+    "imbalanced-learn>=0.14.2",
+    "medmnist>=3.0.2",
 ]
 
 [project.optional-dependencies]

@@ -1061,6 +1061,18 @@ wheels = [
 ]
 
 [[package]]
+name = "fire"
+version = "0.7.1"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "termcolor" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/c0/00/f8d10588d2019d6d6452653def1ee807353b21983db48550318424b5ff18/fire-0.7.1.tar.gz", hash = "sha256:3b208f05c736de98fb343310d090dcc4d8c78b2a89ea4f32b837c586270a9cbf", size = 88720, upload-time = "2025-08-16T20:20:24.175Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/e5/4c/93d0f85318da65923e4b91c1c2ff03d8a458cbefebe3bc612a6693c7906d/fire-0.7.1-py3-none-any.whl", hash = "sha256:e43fd8a5033a9001e7e2973bab96070694b9f12f2e0ecf96d4683971b5ab1882", size = 115945, upload-time = "2025-08-16T20:20:22.87Z" },
+]
+
+[[package]]
 name = "flask"
 version = "3.1.3"
 source = { registry = "https://pypi.org/simple" }
@@ -1612,6 +1624,24 @@ wheels = [
 ]
 
 [[package]]
+name = "imbalanced-learn"
+version = "0.14.2"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "joblib" },
+    { name = "numpy", version = "2.3.5", source = { registry = "https://pypi.org/simple" }, marker = "(platform_machine == 'x86_64' and sys_platform == 'darwin') or (platform_machine != 'x86_64' and extra == 'extra-29-kse-bioinformatics-practicals-cpu' and extra == 'extra-29-kse-bioinformatics-practicals-cu128') or (sys_platform != 'darwin' and extra == 'extra-29-kse-bioinformatics-practicals-cpu' and extra == 'extra-29-kse-bioinformatics-practicals-cu128')" },
+    { name = "numpy", version = "2.4.6", source = { registry = "https://pypi.org/simple" }, marker = "platform_machine != 'x86_64' or sys_platform != 'darwin' or (extra == 'extra-29-kse-bioinformatics-practicals-cpu' and extra == 'extra-29-kse-bioinformatics-practicals-cu128')" },
+    { name = "scikit-learn" },
+    { name = "scipy" },
+    { name = "sklearn-compat" },
+    { name = "threadpoolctl" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/ad/35/d12fc1e8e2c2d8862104c4527641fe2d839324c50db0e6340dc73513faba/imbalanced_learn-0.14.2.tar.gz", hash = "sha256:f80ce7eafbcece8686e32571bd12978546c729c3f277215bead61a906ce9afe4", size = 19172446, upload-time = "2026-06-07T21:41:16.638Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/91/54/760ccac7d8feeea0c191767a6b025d3ca5014084443ff48afb6fb24ef056/imbalanced_learn-0.14.2-py3-none-any.whl", hash = "sha256:f9b81c47231aa1e3a71a1e4b3cc85b42e3b14f85e3a36922f3323c4da23605ef", size = 236073, upload-time = "2026-06-07T21:41:12.384Z" },
+]
+
+[[package]]
 name = "importlib-metadata"
 version = "9.0.1"
 source = { registry = "https://pypi.org/simple" }
@@ -2140,12 +2170,14 @@ dependencies = [
     { name = "dcor" },
     { name = "gradio" },
     { name = "graphviz" },
+    { name = "imbalanced-learn" },
     { name = "ipykernel" },
     { name = "ipympl" },
     { name = "jupyterlab" },
     { name = "kagglehub" },
     { name = "lightgbm" },
     { name = "matplotlib" },
+    { name = "medmnist" },
     { name = "mlflow" },
     { name = "napari", extra = ["all"] },
     { name = "numpy", version = "2.3.5", source = { registry = "https://pypi.org/simple" }, marker = "(platform_machine == 'x86_64' and sys_platform == 'darwin') or (platform_machine != 'x86_64' and extra == 'extra-29-kse-bioinformatics-practicals-cpu' and extra == 'extra-29-kse-bioinformatics-practicals-cu128') or (sys_platform != 'darwin' and extra == 'extra-29-kse-bioinformatics-practicals-cpu' and extra == 'extra-29-kse-bioinformatics-practicals-cu128')" },
@@ -2202,6 +2234,7 @@ requires-dist = [
     { name = "dcor", specifier = ">=0.7" },
     { name = "gradio", specifier = ">=5.0,<7.0" },
     { name = "graphviz", specifier = ">=0.21" },
+    { name = "imbalanced-learn", specifier = ">=0.14.2" },
     { name = "ipykernel", specifier = ">=6.29" },
     { name = "ipympl", specifier = ">=0.9.6" },
     { name = "jupyterlab", specifier = ">=4.4" },
@@ -2209,6 +2242,7 @@ requires-dist = [
     { name = "lifelines", marker = "extra == 'regression-zoo'", specifier = ">=0.30" },
     { name = "lightgbm", specifier = ">=4.7.0" },
     { name = "matplotlib", specifier = ">=3.9" },
+    { name = "medmnist", specifier = ">=3.0.2" },
     { name = "mlflow", specifier = ">=3.0,<4.0" },
     { name = "napari", extras = ["all"], specifier = ">=0.9.2" },
     { name = "numpy", specifier = ">=2.0" },
@@ -2510,6 +2544,33 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/d6/54/cfe61301667036ec958cb99bd3efefba235e65cdeb9c84d24a8293ba1d90/mdurl-0.1.2.tar.gz", hash = "sha256:bb413d29f5eea38f31dd4754dd7377d4465116fb207585f97bf925588687c1ba", size = 8729, upload-time = "2022-08-14T12:40:10.846Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/b3/38/89ba8ad64ae25be8de66a6d463314cf1eb366222074cfda9ee839c56a4b4/mdurl-0.1.2-py3-none-any.whl", hash = "sha256:84008a41e51615a49fc9966191ff91509e3c40b939176e643fd50a5c2196b8f8", size = 9979, upload-time = "2022-08-14T12:40:09.779Z" },
+]
+
+[[package]]
+name = "medmnist"
+version = "3.0.2"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "fire" },
+    { name = "numpy", version = "2.3.5", source = { registry = "https://pypi.org/simple" }, marker = "(platform_machine == 'x86_64' and sys_platform == 'darwin') or (platform_machine != 'x86_64' and extra == 'extra-29-kse-bioinformatics-practicals-cpu' and extra == 'extra-29-kse-bioinformatics-practicals-cu128') or (sys_platform != 'darwin' and extra == 'extra-29-kse-bioinformatics-practicals-cpu' and extra == 'extra-29-kse-bioinformatics-practicals-cu128')" },
+    { name = "numpy", version = "2.4.6", source = { registry = "https://pypi.org/simple" }, marker = "platform_machine != 'x86_64' or sys_platform != 'darwin' or (extra == 'extra-29-kse-bioinformatics-practicals-cpu' and extra == 'extra-29-kse-bioinformatics-practicals-cu128')" },
+    { name = "pandas" },
+    { name = "pillow" },
+    { name = "scikit-image" },
+    { name = "scikit-learn" },
+    { name = "torch", version = "2.11.0", source = { registry = "https://download.pytorch.org/whl/cpu" }, marker = "(platform_machine != 'x86_64' and sys_platform == 'darwin' and extra == 'extra-29-kse-bioinformatics-practicals-cpu') or (platform_machine == 'x86_64' and extra == 'extra-29-kse-bioinformatics-practicals-cpu' and extra == 'extra-29-kse-bioinformatics-practicals-cu128') or (sys_platform != 'darwin' and extra == 'extra-29-kse-bioinformatics-practicals-cpu' and extra == 'extra-29-kse-bioinformatics-practicals-cu128')" },
+    { name = "torch", version = "2.11.0+cpu", source = { registry = "https://download.pytorch.org/whl/cpu" }, marker = "(platform_machine == 'x86_64' and extra == 'extra-29-kse-bioinformatics-practicals-cpu') or (platform_machine != 'x86_64' and extra == 'extra-29-kse-bioinformatics-practicals-cpu' and extra == 'extra-29-kse-bioinformatics-practicals-cu128') or (sys_platform != 'darwin' and extra == 'extra-29-kse-bioinformatics-practicals-cpu')" },
+    { name = "torch", version = "2.11.0+cu128", source = { registry = "https://download.pytorch.org/whl/cu128" }, marker = "extra == 'extra-29-kse-bioinformatics-practicals-cu128'" },
+    { name = "torch", version = "2.14.1", source = { registry = "https://pypi.org/simple" }, marker = "(extra == 'extra-29-kse-bioinformatics-practicals-cpu' and extra == 'extra-29-kse-bioinformatics-practicals-cu128') or (extra != 'extra-29-kse-bioinformatics-practicals-cpu' and extra != 'extra-29-kse-bioinformatics-practicals-cu128')" },
+    { name = "torchvision", version = "0.26.0", source = { registry = "https://download.pytorch.org/whl/cpu" }, marker = "(platform_machine != 'x86_64' and sys_platform == 'darwin' and extra == 'extra-29-kse-bioinformatics-practicals-cpu') or (platform_machine == 'x86_64' and extra == 'extra-29-kse-bioinformatics-practicals-cpu' and extra == 'extra-29-kse-bioinformatics-practicals-cu128') or (sys_platform != 'darwin' and extra == 'extra-29-kse-bioinformatics-practicals-cpu' and extra == 'extra-29-kse-bioinformatics-practicals-cu128')" },
+    { name = "torchvision", version = "0.26.0+cpu", source = { registry = "https://download.pytorch.org/whl/cpu" }, marker = "(platform_machine == 'x86_64' and extra == 'extra-29-kse-bioinformatics-practicals-cpu') or (platform_machine != 'x86_64' and extra == 'extra-29-kse-bioinformatics-practicals-cpu' and extra == 'extra-29-kse-bioinformatics-practicals-cu128') or (sys_platform != 'darwin' and extra == 'extra-29-kse-bioinformatics-practicals-cpu')" },
+    { name = "torchvision", version = "0.26.0+cu128", source = { registry = "https://download.pytorch.org/whl/cu128" }, marker = "extra == 'extra-29-kse-bioinformatics-practicals-cu128'" },
+    { name = "torchvision", version = "0.29.1", source = { registry = "https://pypi.org/simple" }, marker = "(extra == 'extra-29-kse-bioinformatics-practicals-cpu' and extra == 'extra-29-kse-bioinformatics-practicals-cu128') or (extra != 'extra-29-kse-bioinformatics-practicals-cpu' and extra != 'extra-29-kse-bioinformatics-practicals-cu128')" },
+    { name = "tqdm" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/4f/ae/6e1f14664f00b3f43ab4a6dad088a781128ea87901b83d3530070b8fe2f9/medmnist-3.0.2.tar.gz", hash = "sha256:a0cb2b3715561049445b8ad6e8375a3df7b2f4a63ab75c2e3b27719d839d3ac4", size = 28481, upload-time = "2024-09-16T09:37:23.205Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/b5/ea/53e762bb5c3f443fed86b2020daf2e0bb42fa87fea3ac31b374df86364e2/medmnist-3.0.2-py3-none-any.whl", hash = "sha256:8c2e5c5b2a19886181d8600418cc70a48617406be950dff4938e1925cbdde922", size = 25773, upload-time = "2024-09-16T09:37:21.352Z" },
 ]
 
 [[package]]
@@ -4864,6 +4925,18 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/94/e7/b2c673351809dca68a0e064b6af791aa332cf192da575fd474ed7d6f16a2/six-1.17.0.tar.gz", hash = "sha256:ff70335d468e7eb6ec65b95b99d3a2836546063f63acc5171de367e834932a81", size = 34031, upload-time = "2024-12-04T17:35:28.174Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/b7/ce/149a00dd41f10bc29e5921b496af8b574d8413afcd5e30dfa0ed46c2cc5e/six-1.17.0-py2.py3-none-any.whl", hash = "sha256:4721f391ed90541fddacab5acf947aa0d3dc7d27b2e1e8eda2be8970586c3274", size = 11050, upload-time = "2024-12-04T17:35:26.475Z" },
+]
+
+[[package]]
+name = "sklearn-compat"
+version = "0.1.6"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "scikit-learn" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/bf/7e/302cb51f8735bad67f5ce088d027a1e299789d8555967c9642656fa36da0/sklearn_compat-0.1.6.tar.gz", hash = "sha256:8fd4731b4f709b66641b8f49c954dafec7e3b60afc48f2cfd298356c713277c6", size = 178018, upload-time = "2026-06-07T19:00:28.409Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/b0/20/47a7e947757008be1b77f1c6a6861d26a84ef4b4ea3e6ebf4eff24f24d5d/sklearn_compat-0.1.6-py3-none-any.whl", hash = "sha256:b555db6c09d21eb50ee4a767dc08478a865f33f0e42b3ff8fc33f33c616bd7c1", size = 22868, upload-time = "2026-06-07T19:00:27.242Z" },
 ]
 
 [[package]]
